@@ -30,26 +30,6 @@
     padding: 10px;
 }
 
-.outros_logins {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 20px;
-}
-
-.facebook {
-    border: 1px solid #167bf7;
-    border-radius: 10px;
-    padding: 10px;
-    
-}
-
-.google {
-        border: 1px solid #db4a39;
-        border-radius: 10px;
-        padding: 10px;
-        margin-left: 5px;
-}
 
 .acesso {
     display: flex;
