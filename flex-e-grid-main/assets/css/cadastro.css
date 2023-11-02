@@ -1,0 +1,62 @@
+.principal {
+    display: grid;
+}
+
+.cadastro{
+    padding: 20px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.input-padrao {
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    color: black;
+}
+
+.enviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0480DC;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.outros_logins {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.facebook {
+    border: 1px solid #167bf7;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+
+.google {
+        border: 1px solid #db4a39;
+        border-radius: 10px;
+        padding: 10px;
+        margin-left: 5px;
+}
+
+.acesso {
+    display: flex;
+    justify-content: center;
+}
+
+.acesso a{
+    margin-left: 5px;
+    color: #0480DC;
+}

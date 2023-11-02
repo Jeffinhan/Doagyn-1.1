@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Doagyn | Cadastro</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+        <link rel="stylesheet" href="../flex-e-grid-main/assets/css/reset.css">
+        <link rel="stylesheet" href="../flex-e-grid-main/assets/css/estilos.css">
+        <link rel="stylesheet" href="../flex-e-grid-main/assets/css/cadastro.css">
+    </head>
+
+    <body>
+        <header class="cabecalho">
+            <button class="cabecalho__menu" aria-label="Menu"><i></i></button>
+            <img src="../flex-e-grid-main/assets/img/Logo.png" class="cabecalho__logo" aria-label="Logo">
+            <p class="cabecalho__perfil"><a href="./components/cadastro.html">Cadastre-se</a></p>
+            <button class="cabecalho__notificacao" arial-label="Notificação"><i></i></button>
+        </header>
+
+        <nav class="menu-lateral">
+            <img src="../flex-e-grid-main/assets/img/Logo.png" alt="Logotipo da HZC" class="menu-lateral__logo">
+            <a href="./index.html" class="menu-lateral__link menu-lateral__link--inicio">Início</a>
+            <a href="./components/posts.html" class="menu-lateral__link menu-lateral__link--videos">Posts</a>
+            <a href="./components/instituicoes.html" class="menu-lateral__link menu-lateral__link--instituicoes">Instituições</a>
+            <a href="./components/cadastro.html" class="menu-lateral__link menu-lateral__link--cadastro menu-lateral__link--ativo">Cadastro</a>
+
+        </nav>
+
+        <main class="principal">
+            <h2 class="titulo-pagina">Cadastro</h2>
+
+            <section class="cadastro">
+                <form class="formulario">
+                    <label for="nome">NOME</label>
+                    <input type="text" id="nome" class="input-padrao" required>
+
+                    <label for="Sobrenome">SOBRENOME</label>
+                    <input type="text" id="sobrenome" class="input-padrao" required>
+
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" class="input-padrao" placeholder="seuemail@dominio.com" required>
+
+                    <label for="senha">SENHA</label>
+                    <input type="password" id="senha" class="input-padrao" required>
+
+                    <input type="submit" value="CADASTRAR" class="enviar">
+                </form>
+
+                <article class="outros_logins">
+                    <a href="#" class="facebook">ENTRAR COM FACEBOOK</a>
+                    <a href="#" class="google">ENTRAR COM GOOGLE</a>
+                </article>
+
+                <p class="acesso">Já tem uma conta ?<a href="#">login</a></p>
+            </section>
+
+       
+        </main>
+
+        <footer>
+            <ul class="redes-sociais">
+				<li><a href="https://twitter.com/Jeffinfew"><img src="../flex-e-grid-main/assets/img/twitter.png"></a></li>
+				<li><a href="https://www.facebook.com/jefferson.ruan.7906"><img src="../flex-e-grid-main/assets/img/facebook.png"></a></li>
+				<li><a href="https://www.linkedin.com/in/jefferson-ruan-3520b31a2/"><img src="../flex-e-grid-main/assets/img/linkedin.png"></a></li>
+				<li><a href="https://www.instagram.com/jeff.ruan_/"><img src="../flex-e-grid-main/assets/img/instagram.png"></a></li>
+			</ul>
+
+            <p class="creditos">© Todos os direitos reservados a Doagyn</p>
+        </footer>
+
+        <script src="index.js"></script>
+    </body>
+</html>
