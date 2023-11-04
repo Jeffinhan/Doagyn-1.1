@@ -1,78 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Doagyn | Cadastro</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
-        <link rel="stylesheet" href="../flex-e-grid-main/assets/css/reset.css">
-        <link rel="stylesheet" href="../flex-e-grid-main/assets/css/estilos.css">
-        <link rel="stylesheet" href="../flex-e-grid-main/assets/css/cadastro.css">
-    </head>
 
-    <body>
-        <header class="cabecalho">
-            <button class="cabecalho__menu" aria-label="Menu"><i></i></button>
-            <img src="../flex-e-grid-main/assets/img/Logo.png" class="cabecalho__logo" aria-label="Logo">
-            <p class="cabecalho__perfil"><a href="./cadastro.html">Cadastre-se</a></p>
-            <button class="cabecalho__notificacao" arial-label="Notificação"><i></i></button>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doagyn | Cadastro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="../flex-e-grid-main/assets/css/reset.css">
+    <link rel="stylesheet" href="../flex-e-grid-main/assets/css/estilos.css">
+    <link rel="stylesheet" href="../flex-e-grid-main/assets/css/cadastro.css">
+</head>
 
-        <nav class="menu-lateral">
-            <img src="../flex-e-grid-main/assets/img/Logo.png" alt="Logotipo da HZC" class="menu-lateral__logo">
-            <a href="../index.html" class="menu-lateral__link menu-lateral__link--inicio">Início</a>
-            <a href="./posts.html" class="menu-lateral__link menu-lateral__link--videos">Posts</a>
-            <a href="./instituicoes.html" class="menu-lateral__link menu-lateral__link--instituicoes">Instituições</a>
-            <a href="./cadastro.html" class="menu-lateral__link menu-lateral__link--cadastro menu-lateral__link--ativo">Doe Agora</a>
+<body>
+    <header class="cabecalho">
+        <button class="cabecalho__menu" aria-label="Menu"><i></i></button>
+        <img src="../flex-e-grid-main/assets/img/Logo.png" class="cabecalho__logo" aria-label="Logo">
+        <p class="cabecalho__perfil"><a href="./cadastro.html">Cadastre-se</a></p>
+        <button class="cabecalho__notificacao" arial-label="Notificação"><i></i></button>
+    </header>
 
-        </nav>
+    <nav class="menu-lateral">
+        <img src="../flex-e-grid-main/assets/img/Logo.png" alt="Logotipo da HZC" class="menu-lateral__logo">
+        <a href="../index.html" class="menu-lateral__link menu-lateral__link--inicio">Início</a>
+        <a href="./posts.html" class="menu-lateral__link menu-lateral__link--videos">Posts</a>
+        <a href="./instituicoes.html" class="menu-lateral__link menu-lateral__link--instituicoes">Instituições</a>
+        <a href="./cadastro.html" class="menu-lateral__link menu-lateral__link--cadastro menu-lateral__link--ativo">Doe
+            Agora</a>
 
-        <main class="principal">
-            <h2 class="titulo-pagina">Doe Agora</h2>
+    </nav>
 
-            <section class="Doacao">
-                <form class="formulario">
-                    <div class="form-input__container">
-                        <div class="info-instituicao">
-                            <input type="text" class="info-instituicao__input-name input-padrao" placeholder="Nome da Instituição" required>
-                            <input type="number" class="info-instituicao__input-id input-padrao" placeholder="ID" required>
-                        </div>
-    
-                        <div class="info-doador">
-                            <div class="info-name">
-                                <input type="text" class="info-doador__input-fname input-padrao" placeholder="Nome" required>
-                                <input type="text" class="info-doador__input-lname input-padrao" placeholder="Sobrenome" required>
-                            </div>
-        
-                            <div class="info-contact">
-                                <input type="email" id="email" class="info-doador__input-email input-padrao" placeholder="E-mail" required>
-                                <input type="text" id="celular" class="info-doador__input-cellnum input-padrao" placeholder="Celular" required>
-                            </div>
-        
-                            <textarea name="" cols="30" rows="10" placeholder="Mensagem" class="info-doador__text-area input-padrao"></textarea>
-                        </div>
+    <main class="principal">
+        <h2 class="titulo-pagina">Doe Agora</h2>
+
+        <section class="Doacao">
+            <form class="formulario">
+                <div class="form-input__container">
+                    <div class="info-instituicao">
+                        <input type="text" id="input-name" class="info-instituicao__input-name input-padrao"
+                            placeholder="Nome da Instituição" required>
+                        <input type="number" id="input-id" class="info-instituicao__input-id input-padrao"
+                            placeholder="ID" readonly>
                     </div>
 
-                    <input type="submit" value="Doar" class="enviar">
-                </form>
-                </section>
-       
-        </main>
+                    <div class="info-doador">
+                        <div class="info-name">
+                            <input type="text" class="info-doador__input-fname input-padrao" placeholder="Nome"
+                                required>
+                            <input type="text" class="info-doador__input-lname input-padrao" placeholder="Sobrenome"
+                                required>
+                        </div>
 
-        <footer>
-            <ul class="redes-sociais">
-				<li><a href="https://twitter.com/Jeffinfew"><img src="../flex-e-grid-main/assets/img/twitter.png"></a></li>
-				<li><a href="https://www.facebook.com/jefferson.ruan.7906"><img src="../flex-e-grid-main/assets/img/facebook.png"></a></li>
-				<li><a href="https://www.linkedin.com/in/jefferson-ruan-3520b31a2/"><img src="../flex-e-grid-main/assets/img/linkedin.png"></a></li>
-				<li><a href="https://www.instagram.com/jeff.ruan_/"><img src="../flex-e-grid-main/assets/img/instagram.png"></a></li>
-			</ul>
+                        <div class="info-contact">
+                            <input type="email" id="email" class="info-doador__input-email input-padrao"
+                                placeholder="E-mail" required>
+                            <input type="text" id="celular" class="info-doador__input-cellnum input-padrao"
+                                placeholder="Celular" required>
+                        </div>
 
-            <p class="creditos">© Todos os direitos reservados a Doagyn</p>
-        </footer>
+                        <textarea name="" cols="30" rows="10" placeholder="Mensagem"
+                            class="info-doador__text-area input-padrao"></textarea>
+                    </div>
+                </div>
 
-        <script src="../index.js"></script>
-    </body>
+                <input type="submit" value="Doar" class="enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <ul class="redes-sociais">
+            <li><a href="https://twitter.com/Jeffinfew"><img src="../flex-e-grid-main/assets/img/twitter.png"></a></li>
+            <li><a href="https://www.facebook.com/jefferson.ruan.7906"><img
+                        src="../flex-e-grid-main/assets/img/facebook.png"></a></li>
+            <li><a href="https://www.linkedin.com/in/jefferson-ruan-3520b31a2/"><img
+                        src="../flex-e-grid-main/assets/img/linkedin.png"></a></li>
+            <li><a href="https://www.instagram.com/jeff.ruan_/"><img
+                        src="../flex-e-grid-main/assets/img/instagram.png"></a></li>
+        </ul>
+
+        <p class="creditos">© Todos os direitos reservados a Doagyn</p>
+    </footer>
+
+    <script src="../index.js"></script>
+    <script src="../cadastro.js"></script>
+</body>
+
 </html>
