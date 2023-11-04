@@ -1,5 +1,12 @@
 .ranking-card {
     display: flex;
     justify-content: space-around;
-    margin-right: 15px;
+    gap: 35px;
+    height: auto;
+}
+
+.cartao__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
