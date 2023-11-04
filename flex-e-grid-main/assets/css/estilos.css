@@ -196,6 +196,7 @@ body{
 }
 
 .cartao {
+    width: 100%;
     border-radius: 15px;
     overflow: hidden;
     background-color: #F0F0F0;
