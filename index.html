@@ -1,161 +1,204 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doagyn | Home</title>
+    <link rel="shortcut icon" href="./src/assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/src/style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
-    <link rel="stylesheet" href="../flex-e-grid-main/assets/css/reset.css">
-    <link rel="stylesheet" href="../flex-e-grid-main/assets/css/estilos.css">
-    <link rel="stylesheet" href="../flex-e-grid-main/assets/css/sobre.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <title>Doagyn | Início</title>
 </head>
 
 <body>
-    <header class="cabecalho">
-        <button class="cabecalho__menu" aria-label="Menu"><i></i></button>
-        <img src="../flex-e-grid-main/assets/img/Logo.png" class="cabecalho__logo" aria-label="Logo">
-        <p class="cabecalho__perfil"><a href="./components/cadastro.html">Cadastre-se</a></p>
-        <button class="cabecalho__notificacao" arial-label="Notificação"><i></i></button>
-    </header>
-
-    <nav class="menu-lateral">
-        <img src="../flex-e-grid-main/assets/img/Logo.png" alt="Logotipo da HZC" class="menu-lateral__logo">
-        <a href="./index.html"
-            class="menu-lateral__link menu-lateral__link--inicio menu-lateral__link--ativo">Início</a>
-        <a href="./components/posts.html" class="menu-lateral__link menu-lateral__link--videos">Posts</a>
-        <a href="./components/instituicoes.html"
-            class="menu-lateral__link menu-lateral__link--instituicoes">Instituições</a>
-        <a href="./components/cadastro.html" class="menu-lateral__link menu-lateral__link--cadastro">Doe Agora</a>
+    <nav>
+        <div class="nav-contents">
+            <a href="#donate" class="nav-contents__link">
+                <img src="./src/assets/img/donate-hand__icon.svg" alt="Donate Hand Icon">
+                <h3>Doe agora mesmo!</h3>
+            </a>
+        </div>
     </nav>
 
-    <main>
-        <div class="container">
-            <h2 class="titulo-pagina">Venha doar com segurança</h2>
-            <div class="sobre-site">
-                <p class="descricao">A Doagyn tem o objetivo de ajudar organizações de caridade a obter recursos através
-                    de soluções para captação de doações</p>
-                <p class="descricao">Nossa missão é facilitar o contato entre a organização e o doador, amplificar o
-                    engajamento e dar mais visibilidade e destaques para as ONGs do estado de Goiás </p>
-                <p class="descricao">Conectar pessoas com as importantes causas para doar com segurança</p>
+    <div>
+        <div class="bg-gradient"></div>
+
+        <header>
+            <div class="header-contents">
+                <img src="./src/assets/img/doagyn-logo__icon.svg" alt="Doagyn Icon">
+                <ul>
+                    <li><a href="#menu">Início</a></li>
+                    <li><a href="#mission">Missão</a></li>
+                    <li><a href="#institutesFlag">Instituições</a></li>
+                    <li><a href="./src/components/sobre.html">Sobre Nós</a></li>
+                </ul>
             </div>
+        </header>
+        <section id="menu" class="menu-section">
+            <div class="menu-container">
+                <div class="menu-container__contents">
+                    <h3>"Compartilhe o amor, doe a esperança. <br>O mundo precisa de mais doadores. 💖"</h3>
+                    <h1>#DoeVida</h1>
+                </div>
+            </div>
+        </section>
+    </div>
 
-            <h3 class="titulo-pagina">Quem você quer ajudar hoje ? </h3>
-            <p class="descricao">Conheça as ONGs apoiadas pela Doagyn</p>
+    <div class="bg-gradient__section"></div>
 
-            <div class="ongs">
-                <article class="cartao cartao--destaque">
-                    <img src="../flex-e-grid-main/assets/img/buriti_doacoes.jpg" alt="Banner do cartao"
-                        class="cartao__imagem cartao__imagem--mobile">
-                    <img src="../flex-e-grid-main/assets/img/buriti_doacoes.jpg" alt="Banner do cartao"
-                        class="cartao__imagem cartao__imagem--desktop">
-                    <div class="cartao__conteudo">
-                        <p class="cartao__destaque">Aparecida de Goiânia</p>
-                        <h3 id="cardName" class="cartao__titulo">Buriti Doações<span>#<span
-                                    class="card-id">401</span></span></h3>
-                        <p class="cartao__perfil">Um projeto social que realiza doações de alimentos, principalmente
-                            frutas e legumes em Aparecida</p>
-                        <button class="cartao__botao cartao__botao--play cartao__botao--destaque donate-button"><a
-                                href="./components/cadastro.html">CONTRIBUA AGORA</a></button>
+    <section id="mission" class="section-bg">
+        <article>
+            <img src="./src/assets/img/homem-pobre__emocao.jpg" alt="Homem Pobre Caminhando">
+
+            <div class="article-content">
+                <p>A doação é um ato poderoso que transforma vidas. <br>Cada doação, seja de sangue, órgãos, roupas ou
+                    tempo como voluntário, faz a diferença, gerando empatia e solidariedade. <br><br>Além disso, em
+                    momentos de crise, sua doação pode ser a luz no fim do túnel para quem precisa. <br>Faça parte desse
+                    movimento, doe vida.</p>
+                <h1>#DoeVida 🍃</h1>
+            </div>
+        </article>
+        
+    </section>
+    
+    <div class="bg-gradient__section-ongs"></div>
+
+    
+    <div id="institutesFlag"></div>
+    <section id="institutes" class="section-ongs">
+        <div class="section-institutes">
+            <h1>Instituições que confiamos</h1>
+            <div>
+                <div class="ong-cards ">
+                    <div class="ong-cards__card">
+                        <div class="card-img" style="background-image: url('./src/assets/img/buriti_doacoes.jpg');">
+                        </div>
+
+                        <div class="card-info">
+                            <h4>Aparecida de Goiânia</h4>
+                            <div>
+                                <h2 class="card-name">Buriti Doações</h2>
+                                <span class="card-id">#<span>401</span></span>
+                            </div>
+                            <p>Um projeto social que realiza doações de alimentos...</p>
+                            <button id="donateBtn"><a href="#donate">CONTRIBUA AGORA</a></button>
+                        </div>
                     </div>
-                </article>
-            </div>
 
-            <div class="ongs">
-                <article class="cartao cartao--destaque">
-                    <img src="../flex-e-grid-main/assets/img/lar_jesus_menino.jpg" alt="Banner do cartao"
-                        class="cartao__imagem cartao__imagem--mobile">
-                    <img src="../flex-e-grid-main/assets/img/lar_jesus_menino.jpg" alt="Banner do cartao"
-                        class="cartao__imagem cartao__imagem--desktop">
-                    <div class="cartao__conteudo">
-                        <p class="cartao__destaque">Goiânia</p>
-                        <h3 id="cardName" class="cartao__titulo">Lar Jesus Menino<span>#<span
-                                    class="card-id">403</span></span></h3>
-                        <p class="cartao__perfil">O Lar Jesus Menino é uma instituição não governamental que acolhe
-                            crianças carentes em situação de risco, assegurando-lhes moradia, alimentação, educação,
-                            lazer e tratamentos médico, psicológico e odontológico. </p>
-                        <button class="cartao__botao cartao__botao--play cartao__botao--destaque donate-button"><a
-                                href="./components/cadastro.html">CONTRIBUA AGORA</a></button>
+                    <div class="ong-cards__card">
+                        <div class="card-img" style="background-image: url('./src/assets/img/lar_jesus_menino.jpg');">
+                        </div>
+
+                        <div class="card-info">
+                            <h4>Goiânia</h4>
+                            <div>
+                                <h2 class="card-name">Lar Jesus Menino</h2>
+                                <span class="card-id">#<span>403</span></span>
+                            </div>
+                            <p>O Lar Jesus Menino é uma instituição não govername...</p>
+                            <button id="donateBtn"><a href="#donate">CONTRIBUA AGORA</a></button>
+                        </div>
                     </div>
-                </article>
-            </div>
+                </div>
+                <div class="ong-cards ">
+                    <div class="ong-cards__card">
+                        <div class="card-img"
+                            style="background-image: url('./src/assets/img/terra_livre.png'); background-position: top;">
+                        </div>
 
-            <div class="ongs">
-                <article class="cartao cartao--destaque">
-                    <img src="../flex-e-grid-main/assets/img/terra_livre.png" alt="Banner do cartao"
-                        class="cartao__imagem cartao__imagem--mobile">
-                    <img src="../flex-e-grid-main/assets/img/terra_livre.png" alt="Banner do cartao"
-                        class="cartao__imagem cartao__imagem--desktop">
-                    <div class="cartao__conteudo">
-                        <p class="cartao__destaque">Goiânia</p>
-                        <h3 id="cardName" class="cartao__titulo">Terra Livre<span>#<span
-                                    class="card-id">404</span></span></h3>
-                        <p class="cartao__perfil">O Terra Livre é uma organização privada de Assistência social, sem
-                            fins lucrativos e sem vínculos políticos ou religiosos que atua através de arte, educação e
-                            solidariedade na defesa dos direitos da criança e do adolescente.</p>
-                        <button class="cartao__botao cartao__botao--play cartao__botao--destaque donate-button"><a
-                                href="./components/cadastro.html">CONTRIBUA AGORA</a></button>
+                        <div class="card-info">
+                            <h4>Goiânia</h4>
+                            <div>
+                                <h2 class="card-name">Terra Livre</h2>
+                                <span class="card-id">#<span>404</span></span>
+                            </div>
+                            <p>O Terra Livre é uma organização privada de Assistê...</p>
+                            <button id="donateBtn"><a href="#donate">CONTRIBUA AGORA</a></button>
+                        </div>
                     </div>
-                </article>
-            </div>
 
-            <div class="ongs">
-                <article class="cartao cartao--destaque">
-                    <img src="../flex-e-grid-main/assets/img/abrigo_comendador.jpg" alt="Banner do cartao"
-                        class="cartao__imagem cartao__imagem--mobile">
-                    <img src="../flex-e-grid-main/assets/img/abrigo_comendador.jpg" alt="Banner do cartao"
-                        class="cartao__imagem cartao__imagem--desktop">
-                    <div class="cartao__conteudo">
-                        <p class="cartao__destaque">Aparecida de Goiânia</p>
-                        <h3 id="cardName" class="cartao__titulo">Abrigo Comendador Walmor<span>#<span
-                                    class="card-id">302</span></span></h3>
-                        <p class="cartao__perfil">Instituição de Longa Permanência de Idosos com idade acima de 60 anos.
-                        </p>
-                        <button class="cartao__botao cartao__botao--play cartao__botao--destaque donate-button"><a
-                                href="./components/cadastro.html">CONTRIBUA AGORA</a></button>
+                    <div class="ong-cards__card">
+                        <div class="card-img" style="background-image: url('./src/assets/img/abrigo_comendador.jpg');">
+                        </div>
+
+                        <div class="card-info">
+                            <h4>Aparecida de Goiânia</h4>
+                            <div>
+                                <h2 class="card-name">Abrigo Comendador Walmor</h2>
+                                <span class="card-id">#<span>302</span></span>
+                            </div>
+                            <p>Instituição de Longa Permanência de Idosos com ida...</p>
+                            <button id="donateBtn"><a href="#donate">CONTRIBUA AGORA</a></button>
+                        </div>
                     </div>
-                </article>
-            </div>
+                </div>
+                <div class="ong-cards ">
+                    <div class="ong-cards__card">
+                        <div class="card-img"
+                            style="background-image: url('./src/assets/img/projeto_minha_oportunidade.png');"></div>
 
-            <div class="ongs">
-                <article class="cartao cartao--destaque">
-                    <img src="../flex-e-grid-main/assets/img/projeto_minha_oportunidade.png" alt="Banner do cartao"
-                        class="cartao__imagem cartao__imagem--mobile">
-                    <img src="../flex-e-grid-main/assets/img/projeto_minha_oportunidade.png" alt="Banner do cartao"
-                        class="cartao__imagem cartao__imagem--desktop">
-                    <div class="cartao__conteudo">
-                        <p class="cartao__destaque">Goiânia</p>
-                        <h3 id="cardName" class="cartao__titulo">OSBM<span>#<span class="card-id">500</span></span></h3>
-                        <p class="cartao__perfil">As Obras Sociais Dr. Bezerra de Menezes – OSBM, Realiza atividades de
-                            interesse social por meio de assistência à comunidade em geral, principalmente às classes de
-                            baixa renda numa atuação conjunta com os órgãos públicos, privados e a sociedade. </p>
-                        <button class="cartao__botao cartao__botao--play cartao__botao--destaque donate-button"><a
-                                href="./components/cadastro.html">CONTRIBUA AGORA</a></button>
+                        <div class="card-info">
+                            <h4>Goiânia</h4>
+                            <div>
+                                <h2 class="card-name">Terra Livre</h2>
+                                <span class="card-id">#<span>404</span></span>
+                            </div>
+                            <p>O Terra Livre é uma organização privada de Assistê...</p>
+                            <button id="donateBtn"><a href="#donate">CONTRIBUA AGORA</a></button>
+                        </div>
                     </div>
-                </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-gradient__donate"></div>
+    
+    <section id="donate" class="donate-section">
+        <form>
+            <h1 class="titulo-pagina">Doe agora mesmo 💖</h1>
+
+            <div>
+                <div class="info-instituicao">
+                    <input type="text" id="inputName" class="info-instituicao__input-name input-padrao" placeholder="Nome da Instituição" required readonly>
+                    <input type="number" id="inputId" class="info-instituicao__input-id input-padrao" placeholder="ID" readonly>
+                </div>
+
+                <div class="info-doador">
+                    <div class="info-name">
+                        <input type="text" class="info-doador__input-fname input-padrao" placeholder="Nome" required>
+                        <input type="text" class="info-doador__input-lname input-padrao" placeholder="Sobrenome" required>
+                    </div>
+
+                    <div class="info-contact">
+                        <input type="email" id="email" class="info-doador__input-email input-padrao" placeholder="E-mail" required>
+                        <input type="text" id="celular" class="info-doador__input-cellnum input-padrao" placeholder="Celular" required>
+                    </div>
+
+                    <textarea name="" cols="30" rows="10" placeholder="Mensagem" class="info-doador__text-area input-padrao"></textarea>
+                </div>
             </div>
 
-            <a href="./components/instituicoes.html" class="outros">Ver Mais</a>
-    </main>
+            <input type="submit" value="Doar" class="enviar">
+        </form>
+    </section>
 
     <footer>
-        <ul class="redes-sociais">
-            <li><a href="https://twitter.com/Jeffinfew"><img src="../flex-e-grid-main/assets/img/twitter.png"></a></li>
-            <li><a href="https://www.facebook.com/jefferson.ruan.7906"><img
-                        src="../flex-e-grid-main/assets/img/facebook.png"></a></li>
-            <li><a href="https://www.linkedin.com/in/jefferson-ruan-3520b31a2/"><img
-                        src="../flex-e-grid-main/assets/img/linkedin.png"></a></li>
-            <li><a href="https://www.instagram.com/jeff.ruan_/"><img
-                        src="../flex-e-grid-main/assets/img/instagram.png"></a></li>
+        <ul class="footer-icons">
+            <li><a href="https://twitter.com/progmesquita"><img src="./src/assets/img/twitter-icon.png"></a></li>
+            <li><a href="https://github.com/progmesquita"><img src="./src/assets/img/github-icon.png"></a></li>
+            <li><a href="#"><img src="./src/assets/img/instagram-icon.png"></a></li>
         </ul>
 
-        <p class="creditos">© Todos os direitos reservados a Doagyn</p>
+        <a href="./src/components/sobre.html">Sobre Nós</a>
+        <p class="creditos">© Todos os direitos reservados 👽</p>
     </footer>
 
-    <script src="index.js"></script>
+    <script src="./src/assets/js/script.js"></script>
 </body>
 
 </html>

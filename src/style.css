@@ -1,0 +1,455 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+}
+
+.nav-contents {
+    display: flex;
+    justify-content: end;
+    width: 80%;
+}
+
+.nav-contents__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18%;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.nav-contents__link > img {
+    max-width: 13%;
+    height: auto;
+    margin-right: 14px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.header-contents {
+    position: absolute;
+    top: 53px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 80px;
+    font-size: 2rem;
+}
+
+.header-contents > img {
+    max-width: 18%;
+    height: auto;
+    margin-left: 30px;
+}
+
+.header-contents ul > li {
+    display: inline;
+    margin-right: 30px;
+}
+
+.header-contents ul > li:nth-last-child(1) {
+    margin-right: 0px;
+}
+
+.header-contents ul > li > a {
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1.6px;
+}
+
+.header-contents ul > li > a:hover {
+    border-bottom: 1px solid white;
+}
+
+.bg-gradient {
+    position: absolute;
+    background-image: linear-gradient(180deg, #000000 40%, #00000000 100%);
+    opacity: 0.75;
+    width: 100%;
+    height: 90%;
+}
+
+.menu-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 92vh;
+    background-image: url('./assets/img/main-bg.jpg');
+    background-size: cover;
+}
+
+.menu-container {
+    width: 70%;
+    margin-left: 100px;
+}
+
+.menu-container__contents {
+    position: relative;
+    font-size: 2.6rem;
+    color: white;
+    z-index: 1;
+}
+
+/* Second Section */
+.bg-gradient__section{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0.75;
+    width: 100%;
+    height: 92vh;
+}
+
+.section-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 92vh;
+    background-image: url('./assets/img/doacao-ajuda__bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.section-bg > article {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    width: 70%;
+    height: auto;
+    z-index: 1;
+}
+
+.section-bg > article > img {
+    width: 40%;
+    border-radius: 6px;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.article-content {
+    width: 38%;
+    padding: 15px;
+    font-size: 2.6rem;
+    color: white;
+}
+
+.article-content > p {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Third Section */
+.section-ongs {
+    height: 76vh;
+    background-image: url('./assets/img/doacao-ajuda__bg.jpg');
+    color: white;
+}
+
+.bg-gradient__section-ongs {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.75;
+    width: 100%;
+    height: 76vh;
+}
+
+.section-institutes {
+    position: relative;
+    width: 70%;
+    margin: auto;
+}
+
+.section-institutes > div {
+    overflow-y: scroll;
+    width: 102%;
+    height: 50vh;
+    margin: auto;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 150px;
+    background: rgba(105, 105, 105, 0.277);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0097b265;
+}
+
+.section-institutes > h1 {
+    padding-top: 72px;
+    margin-bottom: 45px;
+    font-size: 3rem;
+    letter-spacing: 1.6px;
+}
+
+.ong-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ong-cards:nth-last-child(1) {
+    display: flex;
+    justify-content: start;
+    margin-left: 25px;
+}
+
+.ong-cards__card {
+    width: 45%;
+    height: 350px;
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+}
+
+.card-img {
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-info {
+    padding: 15px;
+    color: white;
+    user-select: none;
+}
+
+.card-info > div {
+    display: flex;
+    align-items: center;
+    letter-spacing: 1.2px;
+}
+
+.card-id {
+    margin-left: 10px;
+    color: rgba(0, 0, 0, 0.425);
+}
+
+.card-info > h4 {
+    font-weight: lighter;
+}
+
+.card-info > p {
+    font-weight: lighter;
+}
+
+.card-info > button {
+    width: 140px;
+    height: 40px;
+    margin-top: 10px;
+    border: none;
+    background-color: #0097B2;
+}
+
+.card-info > button:hover {
+    background-color: #048ba3;
+}
+
+.card-info > button > a {
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+/* Donation Form */
+.bg-gradient__donate {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0.75;
+    width: 100%;
+    height: 78vh;
+}
+
+.donate-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 78vh;
+    background-image: url('./assets/img/main-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+form {
+    position: relative;
+    width: 615px;
+
+}
+
+.titulo-pagina {
+    margin-bottom: 25px;
+    font-size: 2.6rem;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.input-padrao {
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    padding-left: 25px;
+    font-size: 1.6rem;
+    color: black;
+}
+
+.info-instituicao,
+.info-doador {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 615px;
+}
+
+.info-instituicao input,
+.info-doador input {
+    box-shadow: 0px 4px 15px rgba(65, 65, 65, 0.356);
+}
+
+.info-instituicao {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 73px;
+}
+
+.info-instituicao__input-name {
+    width: 100%;
+    margin-right: 15px;
+}
+
+.info-instituicao__input-id {
+    width: 100px;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+
+.info-doador input {
+    margin-bottom: 18px;
+}
+
+.info-name,
+.info-contact {
+    display: flex;
+}
+
+.info-doador__input-fname {
+    width: 280px;
+    margin-right: 15px;
+}
+
+.info-doador__input-lname {
+    width: 320px;
+}
+
+.info-doador__input-email {
+    width: 320px;
+    margin-right: 15px;
+}
+
+.info-doador__input-cellnum {
+    width: 280px;
+}
+
+.info-doador__text-area {
+    width: 615px;
+    height: 155.25px;
+    box-sizing: border-box;
+    padding-top: 15px;
+    font-size: 1.6rem;
+    box-shadow: 0px 4px 15px rgba(65, 65, 65, 0.356);
+    resize: none;
+}
+
+form > input {
+    width: 100%;
+    background-color: #0480DC;
+    border-radius: 5px;
+    border: 0;
+    margin-top: 25px;
+    padding: 10px;
+    font-size: large;
+    color: white;
+}
+
+.enviar:hover {
+    transition: 200ms linear;
+    background-color: #0b7cd3;
+}
+
+.acesso {
+    display: flex;
+    justify-content: center;
+}
+
+.acesso a{
+    margin-left: 5px;
+    color: #0480DC;
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 22vh;
+    font-size: 1.6rem;
+}
+
+footer > a {
+    text-decoration: none;
+    color: black;
+}
+
+footer > a:hover {
+    color: #0097B2;
+    text-decoration: underline;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.footer-icons img {
+    max-width: 35px;
+}
+
+#institutesFlag {
+    position: absolute;
+    top: calc(95vh + 78vh);
+}
